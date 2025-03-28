@@ -1,0 +1,29 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: castai-agent
+  namespace: castai-agent
+spec:
+  interval: 5m
+  chart:
+    spec:
+      chart: castai-agent
+      sourceRef:
+        kind: HelmRepository
+        name: castai-helm
+        namespace: flux-system
+  valuesFrom:
+    - kind: Secret
+      name: castai-credentials
+      valuesKey: apiKey
+      targetPath: apiKey
+  values:
+    provider: gke               # Replace with one of: gke, eks, or aks
+    readonly: true
+    createNamespace: false
+    replicaCount: 1
+    resources:
+      requests:
+        cpu: "100m"
+        memory: "256Mi"
+
