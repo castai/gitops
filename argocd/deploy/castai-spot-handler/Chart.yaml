@@ -1,0 +1,8 @@
+apiVersion: v2
+name: castai-spot-handler
+description: An umbrella chart for deploying Cast AI agent
+version: 0.0.1
+dependencies:
+  - name: castai-spot-handler
+    version: 0.26.1
+    repository: https://castai.github.io/helm-charts

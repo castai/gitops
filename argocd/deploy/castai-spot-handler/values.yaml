@@ -1,0 +1,7 @@
+castai-spot-handler:
+  apiKeySecretRef: "castai-cluster-secret"
+  castai:
+    clusterIdSecretKeyRef:
+      name: "castai-cluster-secret"
+      key: "CLUSTER_ID"
+    provider: "eks"

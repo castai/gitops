@@ -1,0 +1,3 @@
+castai-agent:
+  apiKeySecretRef: "castai-cluster-secret"
+  provider: "eks"
