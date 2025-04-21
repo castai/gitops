@@ -7,4 +7,4 @@ vpc_id                    = ""
 cluster_security_group_id = ""
 node_security_group_id    = ""
 profile                   = "default" # default aws cli profile is used, override if needed.
-gitops_repo_url         = "https://github.com/alexramos-cast-ai/castai-components-gitops-example"
+gitops_repo_url         = "https://github.com/castai/gitops"

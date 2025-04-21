@@ -14,7 +14,7 @@ resource "kubernetes_manifest" "castai_applicationset" {
           "revision" = "HEAD"
           "directories" = [
             {
-              "path" = "deploy/*"
+              "path" = "argocd/deploy/*"
             }
           ]
           }
