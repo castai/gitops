@@ -1,0 +1,8 @@
+apiVersion: v2
+name: castai-workload-autoscaler
+description: An umbrella chart for deploying Cast AI Workload Autoscaler
+version: 0.0.1
+dependencies:
+  - name: castai-workload-autoscaler
+    version: 0.1.97
+    repository: https://castai.github.io/helm-charts

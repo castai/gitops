@@ -1,0 +1,8 @@
+castai-workload-autoscaler:
+  castai:
+    apiKeySecretRef: "castai-cluster-secret"
+    clusterIdSecretKeyRef:
+      name: "castai-cluster-secret"
+      key: "CLUSTER_ID"
+  test:
+    enabled: false

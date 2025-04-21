@@ -1,1 +1,17 @@
 fluxcd/get_cluster_id.py
+.vscode/
+.terraform/
+*/.terraform/
+*.tfplan
+*.tfplan.*
+*terraform.d/
+*/.terraform.d/
+*/crash.log
+*.tfstate
+*.tfstate.lock.info
+*.tfstate.backup
+*.terraform.lock.hcl
+*.tfvars
+*tf.vars
+terraform.tfstate
+.DS_Store

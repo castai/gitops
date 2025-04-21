@@ -1,0 +1,9 @@
+castai-pod-pinner:
+  managedByCASTAI: false
+  castai:
+    apiURL: "https://api.cast.ai"
+    grpcURL: "grpc.cast.ai:443"
+    apiKeySecretRef: "castai-cluster-secret"
+    clusterIdSecretKeyRef:
+      name: "castai-cluster-secret"
+      key: "CLUSTER_ID"

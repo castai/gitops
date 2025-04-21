@@ -1,0 +1,10 @@
+castai_api_token    = ""
+aws_account_id      = ""
+aws_cluster_region  = ""
+aws_cluster_name    = ""
+subnets             = [<SUBNET1>", "<SUBNET2>", "<SUBNET3>"]
+vpc_id                    = ""
+cluster_security_group_id = ""
+node_security_group_id    = ""
+profile                   = "default" # default aws cli profile is used, override if needed.
+gitops_repo_url         = "https://github.com/alexramos-cast-ai/castai-components-gitops-example"

@@ -1,0 +1,7 @@
+castai-evictor:
+  managedByCASTAI: false
+  apiKeySecretRef: "castai-cluster-secret"
+  provider: "eks"
+  clusterIdSecretKeyRef:
+    name: "castai-cluster-secret"
+    key: "CLUSTER_ID"
