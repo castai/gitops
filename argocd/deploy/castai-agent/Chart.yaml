@@ -4,5 +4,5 @@ description: An umbrella chart for deploying Cast AI agent
 version: 0.0.1
 dependencies:
   - name: castai-agent
-    version: 0.97.1
+    version: 0.102.0
     repository: https://castai.github.io/helm-charts

@@ -1,8 +1,8 @@
 apiVersion: v2
 name: castai-evictor
-description: An umbrella chart for deploying Cast AI agent
+description: An umbrella chart for deploying Cast AI evictor
 version: 0.0.1
 dependencies:
   - name: castai-evictor
-    version: 0.32.2
+    version: 0.32.25
     repository: https://castai.github.io/helm-charts

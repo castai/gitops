@@ -1,8 +1,8 @@
 apiVersion: v2
 name: castai-cluster-controller
-description: An umbrella chart for deploying Cast AI agent
+description: An umbrella chart for deploying Cast AI cluster controller
 version: 0.0.1
 dependencies:
   - name: castai-cluster-controller
-    version: 0.81.4
+    version: 0.81.9
     repository: https://castai.github.io/helm-charts
