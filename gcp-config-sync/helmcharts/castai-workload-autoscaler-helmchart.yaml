@@ -1,0 +1,12 @@
+apiVersion: helm.config.gke.io/v1
+kind: HelmChart
+metadata:
+  name: castai-workload-autoscaler
+  namespace: config-management-system
+spec:
+  chart: castai-workload-autoscaler
+  repo: https://castai.github.io/helm-charts
+  version: 0.20.3 # <-- set the desired version
+  releaseName: castai-workload-autoscaler
+  targetNamespace: castai-agent # <-- set the namespace you want to install to
+  values: {} # <-- optionally, add Helm values here
