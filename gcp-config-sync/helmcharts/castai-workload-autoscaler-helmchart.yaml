@@ -1,17 +1,12 @@
-apiVersion: configsync.gke.io/v1beta1
-kind: RootSync
-metadata:
-  name: castai-workload-autoscaler
-  namespace: config-management-system
-spec:
-  sourceType: helm
-  helm:
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+helmCharts:
+  - name: castai-workload-autoscaler
     repo: https://castai.github.io/helm-charts
-    chart: castai-workload-autoscaler
     version: 0.1.111
     releaseName: castai-workload-autoscaler
-    namespace: castai-agent  # This is where Helm will install the resources
-    values:
+    namespace: castai-agent
+    valuesInline:
       castai:
         apiKeySecretRef: "castai-cluster-controller"
         configMapRef: "castai-cluster-controller"
