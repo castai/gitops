@@ -1,0 +1,32 @@
+
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: in-cluster-applicationset
+  namespace: argocd
+spec:
+  goTemplate: true
+  generators:
+    - git:
+        repoURL: {{ .Values.gitops_url }}
+        revision: HEAD
+        directories:
+          - path: "argocd/deploy/*"
+  template:
+    metadata:
+      name: "{{`{{ .path.basename }}`}}"
+    spec:
+      project: in-cluster-project
+      source:
+        repoURL: {{ .Values.gitops_url }}
+        path: "{{`{{ .path.path }}`}}"
+        targetRevision: HEAD
+      destination:
+        server: "https://kubernetes.default.svc"
+        namespace: "{{`{{ .path.basename }}`}}"
+      syncPolicy:
+        automated:
+          prune: true
+          selfHeal: true
+      syncOptions:
+      - CreateNamespace: true
