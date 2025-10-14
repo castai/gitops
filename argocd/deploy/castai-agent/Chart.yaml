@@ -2,6 +2,7 @@ apiVersion: v2
 name: castai-agent
 description: An umbrella chart for deploying Cast AI agent
 version: 0.0.1
+namespace: castai-agent
 dependencies:
   - name: castai-agent
     version: 0.102.0
