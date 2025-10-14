@@ -1,4 +1,0 @@
-apiVersion: v2
-name: customization
-description: Chart to deploy argocd kubernetes objects via terraform helm.
-version: 0.0.1
