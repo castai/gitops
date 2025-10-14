@@ -1,2 +1,3 @@
 clusterName: "VARIABLE_CLUSTER_NAME"
 gitops_url: "VARIABLE_GITOPS_URL"
+namespace: "castai-agent"
