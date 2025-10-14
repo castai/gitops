@@ -2,6 +2,7 @@ apiVersion: v2
 name: castai-cluster-controller
 description: An umbrella chart for deploying Cast AI cluster controller
 version: 0.0.1
+namespace: castai-agent
 dependencies:
   - name: castai-cluster-controller
     version: 0.81.9

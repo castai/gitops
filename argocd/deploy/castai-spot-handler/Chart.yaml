@@ -2,6 +2,7 @@ apiVersion: v2
 name: castai-spot-handler
 description: An umbrella chart for deploying Cast AI spot handler
 version: 0.0.1
+namespace: castai-agent
 dependencies:
   - name: castai-spot-handler
     version: 0.26.3
