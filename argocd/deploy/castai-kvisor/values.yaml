@@ -1,0 +1,6 @@
+castai-kvisor:
+  castai:
+    apiKeySecretRef: "castai-cluster-secret"
+    clusterIdSecretKeyRef:
+      name: "castai-cluster-secret"
+      key: "CLUSTER_ID"
