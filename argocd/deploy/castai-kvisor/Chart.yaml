@@ -1,0 +1,9 @@
+apiVersion: v2
+name: castai-kvisor
+description: An umbrella chart for deploying Cast AI kvisor
+version: 0.0.1
+namespace: castai-agent
+dependencies:
+  - name: castai-kvisor
+    version: 1.0.114
+    repository: https://castai.github.io/helm-charts
