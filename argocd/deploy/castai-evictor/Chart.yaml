@@ -5,5 +5,5 @@ version: 0.0.1
 namespace: castai-agent
 dependencies:
   - name: castai-evictor
-    version: 0.32.25
+    version: 0.33.178
     repository: https://castai.github.io/helm-charts
