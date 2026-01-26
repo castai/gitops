@@ -136,7 +136,7 @@ resource "castai_autoscaler" "castai_autoscaler_policy" {
   cluster_id = castai_eks_cluster.my_castai_cluster.id
 
   autoscaler_settings {
-    enabled                                 = false
+    enabled                                 = true
     is_scoped_mode                          = false
     node_templates_partial_matching_enabled = false
 
@@ -154,14 +154,14 @@ resource "castai_autoscaler" "castai_autoscaler_policy" {
     }
 
     node_downscaler {
-      enabled = false
+      enabled = true
 
       empty_nodes {
         enabled = true
       }
 
       evictor {
-        enabled         = false
+        enabled         = true
         aggressive_mode = false
         cycle_interval  = "60s"
         dry_run         = false
