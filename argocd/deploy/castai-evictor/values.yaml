@@ -1,5 +1,5 @@
 castai-evictor:
-  managedByCASTAI: false
+  managedByCASTAI: true
   apiKeySecretRef: "castai-cluster-secret"
   provider: "eks"
   clusterIdSecretKeyRef:
