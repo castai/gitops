@@ -5,3 +5,5 @@ castai-evictor:
   clusterIdSecretKeyRef:
     name: "castai-cluster-secret"
     key: "CLUSTER_ID"
+  managedByCASTAI: false
+  nodeGracePeriodMinutes: 10
