@@ -162,12 +162,6 @@ resource "castai_autoscaler" "castai_autoscaler_policy" {
 
       evictor {
         enabled         = true
-        aggressive_mode = false
-        cycle_interval  = "60s"
-        dry_run         = false
-
-        node_grace_period_minutes = 10
-        scoped_mode               = false
       }
     }
   }
