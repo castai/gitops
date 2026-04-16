@@ -6,4 +6,5 @@ castai-evictor:
     name: "castai-cluster-secret"
     key: "CLUSTER_ID"
   managedByCASTAI: false
-  nodeGracePeriodMinutes: 10
+  nodeGracePeriodMinutes: 15
+  aggressiveMode: true
